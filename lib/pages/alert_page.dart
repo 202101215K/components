@@ -5,7 +5,18 @@ class AlertPage extends StatelessWidget {
   showMyAlert1( BuildContext context){
     showDialog(context: context, 
     builder: (BuildContext context){
-      return Text("Alert 1");
+      return AlertDialog(title: Text("Alert 1"),
+      content: Text("Hola este es el contenido del alert1"),
+      backgroundColor: Colors.white,
+      actions: [
+        ElevatedButton(onPressed: (){
+          Navigator.pop(context);
+        }, child: Text("Cancelar"),
+       ),
+       ElevatedButton(onPressed: (){}, child: Text("Aceptar"),
+       ),
+       ],
+      );
     });
 
   }
