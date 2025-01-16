@@ -69,6 +69,9 @@ class CardsPage extends StatelessWidget {
                 ],
               ),
             ),
+
+
+             //SEGUNDO COTAINER
             const SizedBox(
               height: 10.0,
             ),
@@ -128,7 +131,67 @@ class CardsPage extends StatelessWidget {
                 ],
               ),
             ),
-            
+
+
+
+
+
+            //TERCER COTAINER
+            const SizedBox(
+              height: 10.0,
+            ),
+            Container(
+              margin: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(12.0),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(18.0),
+                boxShadow: [
+                  BoxShadow(
+                    
+                    // ignore: deprecated_member_use
+                    color: Colors.black.withOpacity(0.2),
+                    offset: const Offset(4, 4),
+                    blurRadius: 12.0,
+                  ),
+                ],
+              ),
+              child: Row(
+                children: [
+                  
+                  
+                 
+                 const Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children:  [
+                        SizedBox(height: 6.0),
+                        Text(
+                          "Loren ispsun dolor sit amet, consectetur adisposing elit, sed do eisumod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim vaniam, quis nostrud exertitation,ullamco laboris nisi ut aliquip ex ea ........",
+                          maxLines: 6,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(fontSize: 14.0),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  //imagen 
+                  Container(
+                    height: 120.0,
+                    width: 120.0,
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/images/plant.png"),
+                        fit: BoxFit.cover,
+                      ),
+                      borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                    ),
+                  ),
+                  const SizedBox(width: 12.0),
+                ],
+              ),
+            ),
           ],
         ),
       ),
