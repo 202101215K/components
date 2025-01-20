@@ -162,17 +162,20 @@ class CardsPage extends StatelessWidget {
                   
                  
                  const Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children:  [
-                        SizedBox(height: 6.0),
-                        Text(
-                          "Loren ispsun dolor sit amet, consectetur adisposing elit, sed do eisumod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim vaniam, quis nostrud exertitation,ullamco laboris nisi ut aliquip ex ea ........",
-                          maxLines: 6,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(fontSize: 14.0),
-                        ),
-                      ],
+                    child: Padding(
+                      padding: EdgeInsets.all(10.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children:  [
+                          SizedBox(height: 6.0),
+                          Text(
+                            "Loren ispsun dolor sit amet, consectetur adisposing elit, sed do eisumod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim vaniam, quis nostrud exertitation,ullamco laboris nisi ut aliquip ex ea ........",
+                            maxLines: 6,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(fontSize: 14.0),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
 
@@ -185,7 +188,7 @@ class CardsPage extends StatelessWidget {
                         image: AssetImage("assets/images/plant.png"),
                         fit: BoxFit.cover,
                       ),
-                      borderRadius: BorderRadius.all(Radius.circular(12.0)),
+                      borderRadius: BorderRadius.all(Radius.circular(16.0)),
                     ),
                   ),
                   const SizedBox(width: 12.0),
